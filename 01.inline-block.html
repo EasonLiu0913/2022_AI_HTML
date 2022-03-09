@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline block</title>
+    <style>
+        .inline-block {
+            width: 200px;
+            height: 100px;
+            background: #faf;
+            display: inline-block;
+        }
+
+        .inline {
+            font-size: 0px;
+        }
+
+        .inline span {
+            font-size: 16px;
+        }
+
+        .inline div {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inline">
+        <span>Inline1</span>
+        <span>Inline2</span>
+    </div>
+
+    <p>block1</p>
+    <p>block2</p>
+    <div class="inline">
+        <div class="inline-block">
+            <div>div 1</div>
+            <div>div 2</div>
+        </div>
+        <div class="inline-block">
+            <div>div 3</div>
+            <div>div 4</div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
