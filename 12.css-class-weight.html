@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css class weight</title>
+    <link rel="stylesheet" href="./css/css-reset.css">
+
+    <link rel="stylesheet" href="./css/css-normalize.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /* 選擇器一樣，代表權重一樣 */
+        /* 權重一樣的話，我們比順序，後蓋前。 */
+        /* 權重不同的話，以權重為主。 */
+        #myID {
+            color: coral;
+        }
+
+        .text.hello3 {
+            color: violet;
+        }
+
+        body h1.text {
+            color: blue !important;
+        }
+
+        h1.text {
+            color: red !important;
+        }
+
+        h1 {
+            color: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello 1</h1>
+    <h1 id="myID" class="text" style="color: aquamarine;">Hello 2</h1>
+
+    <h1 id="myID" class="text hello3" style="color:black !important;">Hello 3 </h1>
+
+</body>
+
+</html>
