@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block margin collapsing</title>
+    <style>
+        p {
+            background: #faf;
+            margin: 0;
+        }
+
+        /* 邊界重疊時，上下的 margin 不會都列入計算。取 margin 大的數值來當做彼此之間的距離 */
+        .top {
+            margin-bottom: 10px;
+        }
+
+        .bottom {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="top">下邊界會重疊</p>
+    <p class="bottom">上邊界會重疊</p>
+</body>
+
+</html>

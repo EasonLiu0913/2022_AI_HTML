@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block margin collapsing 2</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        section {
+            /* border: 1px solid red; */
+            outline: 1px solid red;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #ccc;
+            margin-top: 50px;
+        }
+
+        header {
+            background-color: #faf;
+            /* margin-top: 49px; */
+        }
+
+        footer {
+            background-color: #afa;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>header</header>
+        <footer>footer</footer>
+    </section>
+</body>
+
+</html>
