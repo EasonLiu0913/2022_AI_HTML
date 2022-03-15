@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position relative</title>
+    <!-- <link rel="stylesheet" href="./css/css-reset.css"> -->
+
+    <style>
+        .wrap {
+            width: 400px;
+            height: 400px;
+            background-color: #ccc;
+            position: relative;
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #afa;
+            border: 1px solid #000;
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: #faf;
+            border: 1px solid #000;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            z-index: 0;
+        }
+
+        h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap"></div>
+
+    <div class="wrap">
+        <div class="box">
+            <h3>On sale</h3>
+        </div>
+        <div class="box2">
+            <h3>On sale2</h3>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
