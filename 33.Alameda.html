@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alameda</title>
+    <link rel="stylesheet" href="./css/css-normalize.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .container {
+            width: 960px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+        }
+
+        .justify-content-between {
+            justify-content: space-between;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+
+        .row>div {
+            width: 33.33%;
+        }
+
+        .nav-center {
+            text-align: center;
+        }
+
+        .nav-right {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .nav-right>i {
+            margin-right: 10px;
+        }
+
+        .product-demo-area {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .img-wrap300 {
+            width: 300px;
+            height: 300px;
+        }
+
+        .img-wrap300 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .img-wrap700 {
+            width: 500px;
+        }
+
+        .img-wrap700 img {
+            width: 100%;
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .mb-100 {
+            margin-bottom: 100px;
+        }
+
+        .shopBtn {
+            text-decoration: none;
+            color: #000;
+            background-color: #ccc;
+            padding: 15px 10px;
+        }
+
+        .col {
+            width: 33.33%;
+            padding: 0 10px;
+        }
+
+        .sub-title {
+            width: 40%;
+            margin: auto;
+        }
+
+        .viewbook-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .viewbook-link a {
+            color: #ccc;
+        }
+
+        div.model-left {
+            width: 70%;
+            height: 500px;
+        }
+
+        .model-left>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        div.model-right {
+            width: 30%;
+            height: 500px;
+        }
+
+        .model-right>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .social-icons>i {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="mb-100">
+        <div class="container">
+            <div class="row">
+                <div class="nav-left">
+                    <a href="#">Shop</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Shop</a>
+                </div>
+                <div class="nav-center">
+                    <h1>Alameda</h1>
+                </div>
+                <div class="nav-right">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container">
+            <div class="row justify-content-between">
+                <h2>New In</h2>
+                <a class="shopBtn" href="#">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="container mb-100">
+            <div class="row justify-content-between">
+                <div class="col">
+                    <div class="item">
+                        <div class="img-wrap300">
+                            <img src="./imgs/product1.jpg" alt="">
+                        </div>
+                        <h3>Linen Top/ Blue</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item">
+                        <div class="img-wrap300">
+                            <img src="./imgs/product2.jpg" alt="">
+                        </div>
+                        <h3>Linen Top/ Blue</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item">
+                        <div class="img-wrap300">
+                            <img src="./imgs/product3.jpg" alt="">
+                        </div>
+                        <h3>Linen Top/ Blue</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mb-100">
+            <h3 class="sub-title">Made with love in Los Angeles form all natural eco-friendly materials.</h3>
+        </section>
+
+        <section class="container mb-100">
+            <div class="product-demo-area mb-100">
+                <div class="product-demo-left">
+                    <div class="img-wrap300">
+                        <img src="./imgs/product4.jpg" alt="">
+                    </div>
+                    <h3>Lisa Shirt</h3>
+                    <p>$50.00</p>
+                </div>
+                <div class="product-demo-right">
+                    <div class="img-wrap700">
+                        <img src="./imgs/model1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-demo-area">
+                <div class="product-demo-left order-2">
+                    <div class="img-wrap300">
+                        <img src="./imgs/product4.jpg" alt="">
+                    </div>
+                    <h3>Lisa Shirt</h3>
+                    <p>$50.00</p>
+                </div>
+                <div class="product-demo-right order-1">
+                    <div class="img-wrap700">
+                        <img src="./imgs/model1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mb-100">
+            <div class="viewbook-link">
+                <a href="#">View LookBook</a>
+            </div>
+        </section>
+
+        <section class="container mb-100">
+            <div class="row">
+                <div class="model-left">
+                    <img src="./imgs/model3.jpg" alt="">
+                </div>
+                <div class="model-right">
+                    <img src="./imgs/model4.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="row justify-content-center social-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        <div class="row justify-content-center social-icons">
+            <p>Sign up to Receive news and updates.</p>
+        </div>
+
+        <div class="row justify-content-center social-icons">
+            <input type="text" placeholder="Email Address">
+            <button>Sign up</button>
+        </div>
+
+        <div class="row justify-content-center social-icons">
+            <p>Made with Squarespace</p>
+        </div>
+    </footer>
+</body>
+
+</html>
