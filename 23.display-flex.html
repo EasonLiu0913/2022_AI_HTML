@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display flex</title>
+
+    <style>
+        .d-flex {
+            width: 800px;
+            /* height: 600px; */
+            background-color: #ccc;
+            display: flex;
+            margin: auto;
+        }
+
+        .box {
+            width: 1000px;
+            height: 200px;
+            background-color: #aff;
+            border: 1px solid red;
+
+            /* 子層如果還要，就再下一層 flex */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .col {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .img-wrap img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div class="col">
+            <div class="card">
+                <div class="img-wrap">
+                    <img src="./imgs/pancakes.jpg" alt="">
+                </div>
+                <h3>莓果鬆餅</h3>
+                <p>戶外<span>下午茶最值得推薦的點心</span> ，充滿奶香的鬆餅加上酸甜莓果，大人小孩看了都心動，若再配上咖啡跟美景就更完美。</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="img-wrap">
+                    <img src="./imgs/pancakes.jpg" alt="">
+                </div>
+                <h3>莓果鬆餅</h3>
+                <p>戶外<span>下午茶最值得推薦的點心</span> ，充滿奶香的鬆餅加上酸甜莓果，大人小孩看了都心動，若再配上咖啡跟美景就更完美。</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="img-wrap">
+                    <img src="./imgs/pancakes.jpg" alt="">
+                </div>
+                <h3>莓果鬆餅</h3>
+                <p>戶外<span>下午茶最值得推薦的點心</span> ，充滿奶香的鬆餅加上酸甜莓果，大人小孩看了都心動，若再配上咖啡跟美景就更完美。</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
